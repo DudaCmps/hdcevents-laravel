@@ -18,24 +18,31 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand navbar-light">
-                <div class="callapse navbar-collapse" id="navbar">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid" id="navbar">
+            
                     <a href="/" class="navbar-brand">
-                    <img src="/img/logo.png" alt="HDC Events"></a>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="/" class="nav-link">Eventos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/" class="nav-link">Criar eventos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/" class="nav-link">Entrar</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/" class="nav-link">Cadastrar</a>
-                        </li>
-                    </ul>
+                        <img src="/img/logo-teste.png" alt="HDC Events">
+                    </a>
+            
+                    <div class="collapse navbar-collapse">
+                        <!-- Menu à esquerda -->
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a href="/" class="nav-link">Eventos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/events/create" class="nav-link">Criar eventos</a>
+                            </li>
+                        </ul>
+            
+                        <!-- Botões à direita -->
+                        <div class="d-flex">
+                            <button class="btn btn-outline-light me-2">Entrar</button>
+                            <button class="btn btn-outline-light">Cadastrar</button>
+                        </div>
+                    </div>
+            
                 </div>
             </nav>
         </header>
@@ -45,5 +52,7 @@
         <footer>
             <p>HDC Events &copy; 2025</p>
         </footer>
+        <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/8.0.8/esm/ionicons.min.js"></script>
+        <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/8.0.8/index.min.js"></script>
     </body>
 </html>
