@@ -7,3 +7,25 @@
     width: 71px;
     height: 61px;
 }
+
+body {
+    min-height: 100vh;
+    padding-bottom: 100px;
+    position: relative;
+  }
+  
+  header {
+    
+    border-bottom: 1px solid #CCC;
+  }
+  
+  
+  /* .btn-outline-dark {
+    background-color: #F2A340;
+    border: 2px solid #C28008;
+  } */
+  
+  .btn-outline-dark:hover {
+    background-color: #580291;
+    border-color: #ffa600;
+  }
