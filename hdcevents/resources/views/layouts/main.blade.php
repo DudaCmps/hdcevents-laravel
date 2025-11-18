@@ -58,7 +58,9 @@
         <footer>
             <p>HDC Events &copy; 2025</p>
         </footer>
-        <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/8.0.8/esm/ionicons.min.js"></script>
-        <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/8.0.8/index.min.js"></script>
+        <!-- Ionicons -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
     </body>
 </html>
