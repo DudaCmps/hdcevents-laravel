@@ -35,12 +35,23 @@
                                 <a href="/events/create" class="nav-link">Criar eventos</a>
                             </li>
                         </ul>
-            
-                        <!-- Botões à direita -->
+                        @auth
+                        <a href="/dashboard" class="btn btn-outline-light me-2 text-light">Meus eventos</a>
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <button type="submit" class="btn btn-outline-danger me-2 text-light">
+                                Sair
+                            </button>
+                        </form>
+                        @endauth
+                        @guest
+                            <!-- Botões à direita -->
                         <div class="d-flex">
-                            <button class="btn btn-outline-light me-2">Entrar</button>
-                            <button class="btn btn-outline-light">Cadastrar</button>
+                            <a href="/login" class="btn btn-outline-light me-2 text-light">Entrar</a>
+                            <a href="/register" class="btn btn-outline-light text-light">Cadastrar</a>
                         </div>
+                        @endguest
+                        
                     </div>
             
                 </div>
