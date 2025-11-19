@@ -31,7 +31,7 @@
         </div>
         @endforeach
         @if(count($events) == 0 && $search)
-            <p>Não foi possível encontrar nenhum evento com {{ $search }}! <a href="/">Ver todos</a></p>
+            <p>Não foi possível encontrar nenhum evento com {{ $search }}!  <a href="/">Ver todos</a></p>
 
         @elseif(count($events) == 0)
             <p>Não há eventos disponíveis</p>
