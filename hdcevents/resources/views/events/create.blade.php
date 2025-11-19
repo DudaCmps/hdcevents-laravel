@@ -21,6 +21,11 @@
         </div>
 
         <div class="form-group mb-3">
+            <label for="date" class="fw-semibold">Data do evento:</label>
+            <input class="form-control" type="date" name="date" id="date">
+        </div>
+
+        <div class="form-group mb-3">
             <label for="city" class="fw-semibold">Cidade:</label>
             <input class="form-control" type="text" name="city" id="city" placeholder="Local do evento">
         </div>
