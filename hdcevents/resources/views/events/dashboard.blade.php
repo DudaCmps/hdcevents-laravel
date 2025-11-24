@@ -70,7 +70,11 @@
                         <td scope="row"> {{ count($event->users) }} </td>
 
                         <td scope="row">
-                            <a href="#" class="btn btn-outline-danger btn-sm">Cancelar participação</a>
+                            <form action="/events/leave/{{ $event->id }}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-outline-danger btn-sm">Cancelar participação</button>
+                            </form>
                         </td>
                     </tr>
 
