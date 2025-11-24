@@ -22,11 +22,19 @@
         <tbody>
             @foreach ($events as $event)
                 <tr>
-                    <th scope="row">{{$loop->index + 1}}</th>
+                    <td scope="row">{{$loop->index + 1}}</td>
                     <td><a href="/events/{{$event->id}}">{{$event->title}}</a></td>
 
                     <td scope="row">0</td>
-                    <td scope="row"><a href="#">Editar</a> <a href="#">Deletar</a></td>
+                    <td scope="row">
+                        <a href="#" class="btn btn-info btn-sm"> <ion-icon name="create-outline"></ion-icon> Editar</a> 
+                        <form action="/events/{{ $event->id}}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            
+                            <button type="submit" class="btn btn-outline-danger btn-sm"><ion-icon name="trash-outline"></ion-icon> Deletar</button>
+                        </form>
+                    </td>
                 </tr>
 
             @endforeach

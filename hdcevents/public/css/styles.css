@@ -211,9 +211,9 @@ header {
   margin-top: 30px;
 }
 
-.dashboard-events-container th {
+/* .dashboard-events-container th {
   width: 25%;
-}
+} */
 
 .dashboard-events-container form {
   display: inline-block;
