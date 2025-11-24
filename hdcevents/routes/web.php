@@ -32,3 +32,5 @@ Route::get('/contact', function(){
 
 // Dashboard do usuário – mostra os eventos criados (requer login)
 Route::get('dashboard', [EventController::class, 'dashboard'])->middleware('auth');
+
+Route::post('/events/join/{id}', [EventController::class, 'joinEvent'])->middleware('auth');
