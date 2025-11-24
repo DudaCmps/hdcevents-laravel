@@ -51,7 +51,8 @@
                             <a href="/register" class="btn btn-outline-light text-light">Cadastrar</a>
                         </div>
                         @endguest
-                        
+                        pwd
+
                     </div>
             
                 </div>
