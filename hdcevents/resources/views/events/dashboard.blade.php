@@ -27,7 +27,7 @@
 
                     <td scope="row">0</td>
                     <td scope="row">
-                        <a href="#" class="btn btn-info btn-sm"> <ion-icon name="create-outline"></ion-icon> Editar</a> 
+                        <a href="/events/edit/{{ $event->id }}" class="btn btn-info btn-sm"> <ion-icon name="create-outline"></ion-icon> Editar</a> 
                         <form action="/events/{{ $event->id}}" method="POST">
                             @csrf
                             @method('DELETE')

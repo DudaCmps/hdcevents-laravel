@@ -19,6 +19,12 @@ Route::post('/events', [EventController::class, 'store']);
 // Rota para deletar um evento – só pode deletar se estiver logado
 Route::delete('events/{id}', [EventController::class, 'destroy'])->middleware('auth');
 
+// Rota para editar um evento – só pode deletar se estiver logado
+Route::get('events/edit/{id}', [EventController::class, 'edit'])->middleware('auth');
+
+// Rota para atualizar um evento – só pode deletar se estiver logado
+Route::put('events/update/{id}', [EventController::class, 'update'])->middleware('auth');
+
 // Página de contato – retorna diretamente a view "contact"
 Route::get('/contact', function(){
     return view('contact');
